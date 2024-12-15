@@ -19,7 +19,14 @@
     <main>
         <section>
             <p>A brief paragraph describing the event.</p>
-            <video src=""></video>
+            <video width="640" height="360" controls>
+                <!-- Video file -->
+                <source src="your-video.mp4" type="video/mp4">
+                <!-- Closed Caption file -->
+                <track src="your-captions.vtt" kind="subtitles" srclang="en" label="English" default>
+                <!-- Fallback for unsupported browsers -->
+                Your browser does not support the video tag.
+            </video>
         </section>
     </main>
 
